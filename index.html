@@ -100,7 +100,52 @@
     margin-bottom: 0 !important;
             background-color: rgba(0, 0, 0, 0.8);;
     }
-  
+
+
+
+
+
+  /* Dropdown menu styling */
+.dropdown-menu {
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out; /* Smooth animation for hover effects */
+}
+
+/* Hover effect for dropdown menu */
+.dropdown-menu:hover {
+    border-color: red;
+    transform: scale(1.02); /* Slight growth effect */
+}
+
+/* Additional hover styling for links within the dropdown */
+.dropdown-menu .nav-link:hover {
+    color: red; /* Changes text color for emphasis */
+}
+.btn{
+  border-color: white;
+  color: white;
+}
+/* Default button styling */
+.btn {
+    background-color: black; /* Ensures a dark base color */
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Hover effect for the button */
+.btn:hover {
+    background-color: red; /* Changes background color to red */
+    border-color: red; /* Changes border color to red */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    color: white;
+}
+
+/* Focus styling for better accessibility */
+.btn:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.9); /* Intense glow for focus */
+}
 
 </style>
 <body>
@@ -114,17 +159,21 @@
             </div>
 
             <div class="dropdown">
-              <button type="button" class="btn btn-primary dropdown-toggle bg-dark" data-bs-toggle="dropdown">
-                Dropdown button
+              <button type="button" class="btn dropdown-toggle bg-dark" data-bs-toggle="dropdown">
+                Navigation button
               </button>
 
-              <ul class="dropdown-menu">
-                <li><h5 class="dropdown-header">Dropdown header 1</h5></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                <li><a class="dropdown-item" href="#">Link 3</a></li>
-                <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
-                <li><a class="dropdown-item" href="#">Another link</a></li>
+              <ul class="dropdown-menu bg-dark text-white text-center" id="navContent">
+                <li><h5 class="dropdown-header">Content:</h5></li>
+                <li><a class="nav-link" href="#biography">Biography</a></li>
+                <li><a class="nav-link" href="#earlyLife">Early life</a></li>
+                <li><a class="nav-link" href="#adventures">Adventures</a></li>
+                <li><a class="nav-link" href="#dietandhunting">Diet and hunting</a></li>
+                <li><a class="nav-link" href="#culturalimpact">Cultural Impact</a></li>
+                <li><a class="nav-link" href="#legacy">Legacy</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><h5 class="dropdown-header">Other:</h5></li>
+                <li><a class="nav-link" href="#contact">Contact us</a></li>
               </ul>
             </div>
         </div>
@@ -208,42 +257,46 @@
         </div>
         <div class="col-sm-7">
             <h1 id="title">Findus Fiskekaker</h1>
-
+          <div id="biography">
             <h3>Biography</h2> <hr>
             <p>Findus Fiskekaker was born on March 4, 2019, in the small town of Svelvik, Norway. From an early age, it was clear that Findus was not an ordinary cat. He exhibited an unusual level of curiosity and intelligence, characteristics that would later define his extraordinary life. Named after the Norwegian fish cake "fiskekaker," Findus's full name reflects a playful combination of Norwegian culture and the adventurous spirit that would come to symbolize his existence.
                 Findus's breed is a unique mix of Somali cat and Norwegian Forest cat. The Somali cat, known for its vibrant personality, agility, and keen hunting skills, deeply influenced Findus's character. On the other hand, the Norwegian Forest cat, with its robust build and history of surviving in the wild, contributed to his physical prowess. Despite this, Findus has always identified more strongly with his Somali heritage, embracing the adventurous and often mischievous spirit associated with Somali pirates.</p>
-         
-             <h3>Early Life and Background</h2> <hr>
+          </div>
+          <div id="earlyLife">
+             <h3>Early Life and Background</h3> <hr>
              <p>Findus was born on March 4, 2019, and quickly became known for his adventurous spirit. His mixed heritage includes Somali cat and Norwegian Forest cat, although he is more inclined towards his Somali roots, often identifying as a Somali pirate. Despite his Norwegian Forest cat lineage, Findus finds this aspect of his heritage less remarkable.</p>
              <p> </p>
              <p>Living in Svelvik, a town surrounded by dense forests and rugged landscapes, provided Findus with the perfect environment to explore his natural instincts. His home, shared with his human companions—Thor Alexander Ånderå, Thor Inge Gabriel Ånderå, and Thor Inge Ånderå—became the base for his many adventures. The Ånderå family, known for their deep love and respect for animals, provided Findus with the freedom to explore his surroundings, fueling his innate curiosity and desire for adventure.</p>
-        
+          </div>
+          <div id="adventures">
              <h3>Adventures and the Bush Dimension</h2> <hr>
              <p>Findus quickly earned the title "King of the Forest" among the local residents of Svelvik. His daily excursions into the woods became the stuff of legend. Unlike most domestic cats, who might be content with a backyard, Findus ventured deep into the wilderness, navigating the thick underbrush, towering trees, and rocky terrain with the grace and confidence of a seasoned explorer.
                 Many locals claim to have seen Findus patrolling the forest as if it were his kingdom, his golden eyes surveying his domain with a mixture of pride and vigilance. His physical appearance—marked by a sleek, muscular build and a luxurious, thick coat—only added to his regal aura. Despite his frequent absences, Findus always returned home, often bringing with him the spoils of his hunts, which included a variety of small animals like mice, rats, and birds.</p>
              <p> </p>
              <p>Among the many tales surrounding Findus, none is more captivating than the story of his alleged ability to access a mystical realm known as the "bush dimension." According to local legend, this dimension is a hidden portal within the densest parts of the forest, leading directly to Valhalla, the mythical Norse afterlife. It is said that Findus, with his sharp senses and extraordinary intelligence, discovered this portal during one of his many forest adventures.
                 In Valhalla, as the legend goes, Findus becomes a warrior of mythical proportions, joining forces with ancient cat Vikings. These feline warriors, believed to have been lost to history, are said to rely on Findus to lead them in their eternal battles. The notion that a seemingly ordinary house cat could possess such incredible powers has only enhanced Findus’s status as a local legend. While these stories are undoubtedly steeped in myth, they reflect the deep admiration and fascination that the people of Svelvik have for their beloved King of the Forest.</p>
-            <div id="dietandhunting">
-                <h3>Diet and Hunting</h2> <hr>
-                <p>Findus’s diet is a blend of domesticated convenience and wild instinct. At home, he enjoys a regular diet of dry and wet cat food, provided by his owners. This diet ensures that he receives all the necessary nutrients to maintain his health and energy levels. However, Findus’s true passion lies in the hunt. His time spent in the forest is often punctuated by successful hunts, where he catches a variety of small animals, including mice, rats, and birds.</p>
-                <p> </p>
-                <p>These hunting activities are not only a testament to his skills as a predator but also reflect his connection to his wild ancestry. The thrill of the hunt, the strategy involved, and the satisfaction of a successful catch are all essential aspects of Findus’s life, allowing him to fully embrace his role as the King of the Forest.</p>
-            </div>
-            <div id="culturalimpact">
-                <h3>Cultural Impact</h3> <hr>
-                <p>Findus Fiskekaker has become a cultural icon in Svelvik. His adventures, academic achievements, and mythical roles have made him a subject of fascination and admiration among the local residents. Stories about Findus' exploits are passed down from person to person, often embellished with each retelling, adding to the rich tapestry of folklore that surrounds him.</p>
-                <p> </p>
-                <p>The title "King of the Forest" is not just a nickname; it represents the deep respect that the community holds for Findus. His ability to navigate both the human world and the wild forest with equal ease has made him a symbol of balance and harmony between nature and civilization.</p>
-                <p> </p>
-                <p>The tales of Findus' adventures in the bush dimension and his role as a Viking warrior have inspired a new wave of local folklore. These stories, though fictional, capture the imagination of both young and old, turning Findus into a legendary figure whose deeds will be remembered for generations. The idea that a simple house cat could hold such power and influence resonates deeply with the people of Svelvik, reinforcing their belief in the magic and mystery of the natural world.</p>
-                <h3>Legacy</h3> <hr>
-                <p>As Findus continues to roam the forests of Svelvik, his legacy grows with each passing day. His life is a testament to the possibilities that lie beyond the ordinary, a reminder that even a domestic cat can live a life of adventure, achievement, and mystery. Whether he is navigating the complexities of quantum physics, leading a Viking charge in Valhalla, or simply enjoying a quiet moment in the sun, Findus Fiskekaker embodies the spirit of exploration and the joy of living life to the fullest.</p>
-                <p> </p>
-                <p>As the years go by, the stories of Findus will likely continue to evolve, blending fact with fiction in a way that only enhances his legend. He remains a source of inspiration, not just for the people of Svelvik but for anyone who dares to dream of a life as rich and varied as that of Findus Fiskekaker, the King of the Forest.</p>
-                
+          </div>
+          <div id="dietandhunting">
+            <h3>Diet and Hunting</h2> <hr>
+            <p>Findus’s diet is a blend of domesticated convenience and wild instinct. At home, he enjoys a regular diet of dry and wet cat food, provided by his owners. This diet ensures that he receives all the necessary nutrients to maintain his health and energy levels. However, Findus’s true passion lies in the hunt. His time spent in the forest is often punctuated by successful hunts, where he catches a variety of small animals, including mice, rats, and birds.</p>
+            <p> </p>
+            <p>These hunting activities are not only a testament to his skills as a predator but also reflect his connection to his wild ancestry. The thrill of the hunt, the strategy involved, and the satisfaction of a successful catch are all essential aspects of Findus’s life, allowing him to fully embrace his role as the King of the Forest.</p>
+          </div>
+          <div id="culturalimpact">
+            <h3>Cultural Impact</h3> <hr>
+            <p>Findus Fiskekaker has become a cultural icon in Svelvik. His adventures, academic achievements, and mythical roles have made him a subject of fascination and admiration among the local residents. Stories about Findus' exploits are passed down from person to person, often embellished with each retelling, adding to the rich tapestry of folklore that surrounds him.</p>
+            <p> </p>
+            <p>The title "King of the Forest" is not just a nickname; it represents the deep respect that the community holds for Findus. His ability to navigate both the human world and the wild forest with equal ease has made him a symbol of balance and harmony between nature and civilization.</p>
+            <p> </p>
+            <p>The tales of Findus' adventures in the bush dimension and his role as a Viking warrior have inspired a new wave of local folklore. These stories, though fictional, capture the imagination of both young and old, turning Findus into a legendary figure whose deeds will be remembered for generations. The idea that a simple house cat could hold such power and influence resonates deeply with the people of Svelvik, reinforcing their belief in the magic and mystery of the natural world.</p>
+          <div id="legacy">
+            <h3>Legacy</h3> <hr>
+            <p>As Findus continues to roam the forests of Svelvik, his legacy grows with each passing day. His life is a testament to the possibilities that lie beyond the ordinary, a reminder that even a domestic cat can live a life of adventure, achievement, and mystery. Whether he is navigating the complexities of quantum physics, leading a Viking charge in Valhalla, or simply enjoying a quiet moment in the sun, Findus Fiskekaker embodies the spirit of exploration and the joy of living life to the fullest.</p>
+            <p> </p>
+            <p>As the years go by, the stories of Findus will likely continue to evolve, blending fact with fiction in a way that only enhances his legend. He remains a source of inspiration, not just for the people of Svelvik but for anyone who dares to dream of a life as rich and varied as that of Findus Fiskekaker, the King of the Forest.</p>
+          </div>
 
-
+              <div id="education">
                 <button data-bs-toggle="collapse" data-bs-target="#demo" class="textDropDown"><h3>Education <i class="bi bi-caret-down-fill" id="toggle-icon"></i></i></h3></button>
                 <div id="demo" class="collapse show"> 
                     <p>Throughout his life, Findus has pursued various careers, showcasing his versatility and intelligence:</p>
@@ -360,11 +413,11 @@
         margin-top: 15px;
       }
     
-      .btn {
+      .btn btn-light pull-right{
         background-color: rgb(255, 255, 255);
       }
     
-      .btn:hover {
+      .btn btn-light pull-right:hover {
         background-color: rgba(125, 76, 76, 0.8);
       }
     </style>
