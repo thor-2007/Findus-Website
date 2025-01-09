@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</head>
+<style>
+    html, body {
+    overflow-x: hidden;
+    
+    }
+    /* Remove margin from the navbar */
+    .navbar {
+        margin-bottom: 0 !important;
+        background-color: rgba(0, 0, 0, 0.8);;
+    }
+        /* Remove top margin on jumbotron */
+    .mt-4 {
+        margin-top: 0 !important;
+    }
+    .col-sm-7{
+        margin-top: 50px;
+        padding: 40px;
+    }
+    .col-sm-3{
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgba(240, 240, 240, 0.8);;
+    }
+    #title{
+        margin-bottom: 50px;
+        font-size: 60px;
+        text-align: center;
+    }
+    #logo{
+        margin-left: 50px;
+    }
+    #logo:hover{
+        transform: scale(1.15);
+    }
+    #sideInfo{
+        padding: 50px;
+        border-radius: 2px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+
+    body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+
+  .textDropDown{
+    border: transparent;
+    background-color: transparent;
+  }
+  .textDropDown:hover{
+    text-decoration-line: underline;
+  }
+
+  .mt-5{
+    margin-bottom: 0 !important;
+            background-color: rgba(0, 0, 0, 0.8);;
+    }
+  
+
+</style>
+<body>
+    <nav class="navbar navbar-expand navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="Findus_logo_white.png" alt="Findus Fiskekaker" style="width:50px;" id="logo">
+            </a>
+            <div class="container-fluid">
+                <h5 class="navbar-text"></h5>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="20240805_142433.jpg" class="d-block w-100">
+        <div class="carousel-caption">
+            <h1>Lord Findus</h1>
+            <p>"Lo, Lord Findus doth repose upon the cold, unyielding floor, as if the earth itself were his chosen throne."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Snapchat-842880665.jpg" class="d-block w-100">
+        <div class="carousel-caption">
+            <h1>Bitches Be Barkin’, I Be Bossin'</h1>
+            <p>"Though bitches bark and wag with scorn,
+                A noble heart doth rise unshaken,
+                For in the face of harsh disdain,
+                The spirit is not broken, but awakened." - Findus</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="20240808_164002_lightroom.jpg" class="d-block w-100">
+        <div class="carousel-caption">
+            <p>"I have a massive cock."</p>
+            <h3>- Findus</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <ul id="sideInfo">
+                <li>Born: March 4, 2019, Oslo, under the ethereal light of a cosmic alignment.</li>
+                <li>Residence: Svelvik, Norway, with undisclosed retreats in alternative dimensions.</li>
+                <li>Species: Felis catus (Domestic Cat), an apex lifeform in the intergalactic biosphere.</li>
+                <li>Breed: Half Somali, Half Norwegian Forest Cat, combining the elegance of two distinguished feline lineages.</li>
+                <li>Other names: The Sovereign of the Woodland Realms, The Eternal Guardian of the Purr.</li>
+                <li>Occupation: Quantum Physicist, Medical Expert, Professional Hockey Player, Global Artist, Former Lead Guitarist (Metallica, Sepultura, Gojira, Cavalera Conspiracy, Emperor, Mayhem), Viking Warrior, Somali Pirate, Astrophysicist, Culinary Chef, Yoga Master, Linguist, Environmental Activist.</li>
+                <li>Owner(s): Thor Alexander Ånderå, Thor Inge Gabriel Ånderå, Thor Inge Ånderå.</li>
+                <li>Specialty: Master of astrophysical phenomena, particularly black holes and their relation to the purr mechanism.</li>
+                <li>Hobbies: Theoretical time travel, crafting complex yarn patterns, and deciphering ancient hieroglyphs.</li>
+                <li>Notable achievements: The only known feline to successfully complete a PhD in Quantum Mechanics while simultaneously creating a bestselling album.</li>
+                <li>Past Lives: A renowned philosopher in Ancient Greece, advisor to Alexander the Great, and a secret agent during the Cold War.</li>
+                <li>Favorite pastime: Meditating for 12 hours at a time while contemplating the nature of the universe and the importance of tuna.</li>
+                <li>Global recognition: Voted "Most Inspirational Feline" by the International Federation of Advanced Lifeforms, 2022.</li>
+                <li>Secret talent: Able to decipher the most cryptic human behaviors with a single, well-timed gaze.</li>
+                <li>Signature move: The Paw of Enlightenment – an ancient technique to unlock the hidden truths of the universe.</li>
+                <li>Master of disguise: Can blend seamlessly into any environment, from Victorian parlors to bustling intergalactic spaceports.</li>
+                <li>Favorite food: A rare delicacy known only to the elite of the feline world: quantum-infused sardines.</li>
+                <li>Notable relationships: Has shared philosophical debates with several Nobel laureates and once mediated a peace treaty between two rival squirrel factions.</li>
+                <li>Intellectual pursuits: Currently working on the Unified Theory of Everything (but breaks for naps every two hours).</li>
+                <li>Influence: A thought leader in the fields of feline ethics, interspecies diplomacy, and snack-based economies.</li>
+                <li>Contributions to society: Founder of the "Paws for Peace" movement, dedicated to peaceful coexistence between cats and dogs.</li>
+                <li>Philosophical leanings: Advocate of the Purronian School of Thought, which posits that true enlightenment comes from mastering the art of purring.</li>
+                <li>Multilingual: Fluent in Meowish, Purrsian, and Ancient Catonian; currently learning Barklish as part of a cross-species research project.</li>
+                <li>Unusual hobby: Writing award-winning poetry on the transient nature of socks and the philosophical implications of laser pointers.</li>
+                <li>Secret mission: Embarked on a covert operation to retrieve the lost relic of the Litter Box Order, but it’s classified.</li>
+                <li>Recognition: Has a Nobel Prize in Purrformance, awarded for contributions to feline art and quantum wave functions.</li>
+                <li>Superpower: Hypnotic purr that can calm the most tumultuous storms or compel humans to provide treats instantly.</li>
+                <li>Future aspirations: To one day lead a feline-led intergalactic expedition to discover the origins of the universe, one nap at a time.</li>
+            </ul>
+            
+        </div>
+        <div class="col-sm-7">
+            <h1 id="title">Findus Fiskekaker</h1>
+
+            <h3>Biography</h2> <hr>
+            <p>Findus Fiskekaker was born on March 4, 2019, in the small town of Svelvik, Norway. From an early age, it was clear that Findus was not an ordinary cat. He exhibited an unusual level of curiosity and intelligence, characteristics that would later define his extraordinary life. Named after the Norwegian fish cake "fiskekaker," Findus's full name reflects a playful combination of Norwegian culture and the adventurous spirit that would come to symbolize his existence.
+                Findus's breed is a unique mix of Somali cat and Norwegian Forest cat. The Somali cat, known for its vibrant personality, agility, and keen hunting skills, deeply influenced Findus's character. On the other hand, the Norwegian Forest cat, with its robust build and history of surviving in the wild, contributed to his physical prowess. Despite this, Findus has always identified more strongly with his Somali heritage, embracing the adventurous and often mischievous spirit associated with Somali pirates.</p>
+         
+             <h3>Early Life and Background</h2> <hr>
+             <p>Findus was born on March 4, 2019, and quickly became known for his adventurous spirit. His mixed heritage includes Somali cat and Norwegian Forest cat, although he is more inclined towards his Somali roots, often identifying as a Somali pirate. Despite his Norwegian Forest cat lineage, Findus finds this aspect of his heritage less remarkable.</p>
+             <p> </p>
+             <p>Living in Svelvik, a town surrounded by dense forests and rugged landscapes, provided Findus with the perfect environment to explore his natural instincts. His home, shared with his human companions—Thor Alexander Ånderå, Thor Inge Gabriel Ånderå, and Thor Inge Ånderå—became the base for his many adventures. The Ånderå family, known for their deep love and respect for animals, provided Findus with the freedom to explore his surroundings, fueling his innate curiosity and desire for adventure.</p>
+        
+             <h3>Adventures and the Bush Dimension</h2> <hr>
+             <p>Findus quickly earned the title "King of the Forest" among the local residents of Svelvik. His daily excursions into the woods became the stuff of legend. Unlike most domestic cats, who might be content with a backyard, Findus ventured deep into the wilderness, navigating the thick underbrush, towering trees, and rocky terrain with the grace and confidence of a seasoned explorer.
+                Many locals claim to have seen Findus patrolling the forest as if it were his kingdom, his golden eyes surveying his domain with a mixture of pride and vigilance. His physical appearance—marked by a sleek, muscular build and a luxurious, thick coat—only added to his regal aura. Despite his frequent absences, Findus always returned home, often bringing with him the spoils of his hunts, which included a variety of small animals like mice, rats, and birds.</p>
+             <p> </p>
+             <p>Among the many tales surrounding Findus, none is more captivating than the story of his alleged ability to access a mystical realm known as the "bush dimension." According to local legend, this dimension is a hidden portal within the densest parts of the forest, leading directly to Valhalla, the mythical Norse afterlife. It is said that Findus, with his sharp senses and extraordinary intelligence, discovered this portal during one of his many forest adventures.
+                In Valhalla, as the legend goes, Findus becomes a warrior of mythical proportions, joining forces with ancient cat Vikings. These feline warriors, believed to have been lost to history, are said to rely on Findus to lead them in their eternal battles. The notion that a seemingly ordinary house cat could possess such incredible powers has only enhanced Findus’s status as a local legend. While these stories are undoubtedly steeped in myth, they reflect the deep admiration and fascination that the people of Svelvik have for their beloved King of the Forest.</p>
+            <div id="dietandhunting">
+                <h3>Diet and Hunting</h2> <hr>
+                <p>Findus’s diet is a blend of domesticated convenience and wild instinct. At home, he enjoys a regular diet of dry and wet cat food, provided by his owners. This diet ensures that he receives all the necessary nutrients to maintain his health and energy levels. However, Findus’s true passion lies in the hunt. His time spent in the forest is often punctuated by successful hunts, where he catches a variety of small animals, including mice, rats, and birds.</p>
+                <p> </p>
+                <p>These hunting activities are not only a testament to his skills as a predator but also reflect his connection to his wild ancestry. The thrill of the hunt, the strategy involved, and the satisfaction of a successful catch are all essential aspects of Findus’s life, allowing him to fully embrace his role as the King of the Forest.</p>
+            </div>
+            <div id="culturalimpact">
+                <h3>Cultural Impact</h3> <hr>
+                <p>Findus Fiskekaker has become a cultural icon in Svelvik. His adventures, academic achievements, and mythical roles have made him a subject of fascination and admiration among the local residents. Stories about Findus' exploits are passed down from person to person, often embellished with each retelling, adding to the rich tapestry of folklore that surrounds him.</p>
+                <p> </p>
+                <p>The title "King of the Forest" is not just a nickname; it represents the deep respect that the community holds for Findus. His ability to navigate both the human world and the wild forest with equal ease has made him a symbol of balance and harmony between nature and civilization.</p>
+                <p> </p>
+                <p>The tales of Findus' adventures in the bush dimension and his role as a Viking warrior have inspired a new wave of local folklore. These stories, though fictional, capture the imagination of both young and old, turning Findus into a legendary figure whose deeds will be remembered for generations. The idea that a simple house cat could hold such power and influence resonates deeply with the people of Svelvik, reinforcing their belief in the magic and mystery of the natural world.</p>
+                <h3>Legacy</h3> <hr>
+                <p>As Findus continues to roam the forests of Svelvik, his legacy grows with each passing day. His life is a testament to the possibilities that lie beyond the ordinary, a reminder that even a domestic cat can live a life of adventure, achievement, and mystery. Whether he is navigating the complexities of quantum physics, leading a Viking charge in Valhalla, or simply enjoying a quiet moment in the sun, Findus Fiskekaker embodies the spirit of exploration and the joy of living life to the fullest.</p>
+                <p> </p>
+                <p>As the years go by, the stories of Findus will likely continue to evolve, blending fact with fiction in a way that only enhances his legend. He remains a source of inspiration, not just for the people of Svelvik but for anyone who dares to dream of a life as rich and varied as that of Findus Fiskekaker, the King of the Forest.</p>
+                
+
+
+                <button data-bs-toggle="collapse" data-bs-target="#demo" class="textDropDown"><h3>Education <i class="bi bi-caret-down-fill" id="toggle-icon"></i></i></h3></button>
+                <div id="demo" class="collapse show"> 
+                    <p>Throughout his life, Findus has pursued various careers, showcasing his versatility and intelligence:</p>
+            
+                    <h3>- Quantum Physicist</h3>
+                    <p>Findus’s intellectual journey began with a fascination for the mysteries of the universe. His natural curiosity led him to study quantum physics, where he earned a master’s degree. His research focused on the behavior of subatomic particles, which he observed during his long hours spent in the forest, studying the movement of light and shadows.</p>
+            
+                    <h3>- Medical Expert</h3>
+                    <p>In addition to his work in physics, Findus pursued a master’s degree in medicine. His studies in this field were driven by his observations of nature’s healing processes. He became an expert in feline anatomy and even developed techniques for natural remedies, which he occasionally used to treat injured animals he encountered during his forest adventures.</p>
+                    
+                    <h3>- Astrophysics</h3>
+                    <p>Not satisfied with mastering quantum physics alone, Findus expanded his academic pursuits into the realm of astrophysics. His fascination with the stars and the cosmos led him to explore the origins of the universe and the complex mechanics of celestial bodies. His work in this field earned him recognition among academic circles, particularly for his theories on interstellar travel.</p>
+            
+                    <h3>- Culinary Chef</h3>
+                    <p>Findus’s culinary talents led him to work in some of Norway’s top kitchens, where he became known for his innovative recipes and his ability to create dishes that delighted both cats and humans. His signature dish, a fusion of traditional Norwegian fishcakes with spices from the Horn of Africa, became a favorite among culinary enthusiasts.</p>
+            
+                    <h3>- Former Lead Guitarist for Metallica</h3>
+                    <p>During a brief yet memorable period, Findus served as the lead guitarist for the heavy metal band Metallica. His exceptional musical talent and stage presence brought a new energy to the band’s performances, and though his time with them was short, it left a lasting impact on the world of music.</p>
+            
+                    <h3>- Mythical Viking Warrior</h3>
+                    <p>In the bush dimension, Findus is believed to play the role of a Viking warrior. This mythical career, while rooted in local folklore, speaks to his legendary status and the deep respect he commands in both the human and feline communities.</p>
+            
+                    <h3>- Somali Pirate</h3>
+                    <p>Embracing his Somali heritage, Findus also took on the role of a pirate. This career, though more symbolic than literal, reflects his adventurous spirit and his love for exploration and discovery.</p>
+            
+                    <h3>- Linguist and Translator</h3>
+                    <p>Findus’s linguistic abilities allowed him to bridge the gap between species, working as a translator for various animal communication projects. His work in this field helped improve understanding and cooperation between humans and animals, leading to advancements in animal welfare and communication.</p>
+            
+                    <h3>- Environmental Activist</h3>
+                    <p>A true guardian of the forest, Findus also took on the role of environmental activist. His deep connection to nature inspired him to advocate for the preservation of the forests in Svelvik and beyond. Through his efforts, he raised awareness about the importance of conservation and the need to protect natural habitats for future generations.</p>
+            
+                    <h3>- Yoga Master and Wellness Guru</h3>
+                    <p>Findus’s mastery of yoga and meditation led him to become a wellness guru, offering classes and workshops to both humans and animals. His teachings focused on achieving balance, inner peace, and physical well-being, attracting a following of dedicated practitioners.</p>
+            
+                    <h3>- Artist and Creator of "Piss Art"</h3>
+                    <p>In a unique and unconventional turn in his career, Findus has also made a name for himself in the art world. Known for his "piss art," Findus creates his masterpieces by urinating on canvases, producing a striking green hue that has captivated audiences worldwide. This unusual method has sparked intense debate in the art community, with some hailing it as a bold statement on the nature of creativity and others questioning its legitimacy as art.</p>
+                    <p> </p>
+                    <p>One particularly famous incident involved Thor Alexander Ånderå's little sister, Leah Sofie Ånderå. After spending considerable time and effort painting on a canvas, she proudly displayed her work, only for Findus to urinate on it moments later. The green stain that spread across the painting added an unexpected element, leading some to speculate that Findus was making a deliberate artistic statement, perhaps conveying a deeper message about the impermanence of art or the fluid nature of creativity.</p>
+                    <p> </p>
+                    <p>Findus’s art, though controversial, has gained recognition across the globe. His pieces have been featured in numerous exhibitions, and collectors eagerly seek out his work. The unique combination of feline instinct and artistic expression has solidified Findus’s place as one of the most innovative artists of his time.</p>
+                </div>
+
+                <p><cite>Article made by Thor Alexander Ånderå (29.08.2024), updated (24.12.2024).</cite></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12"></div>
+    </div>
+
+
+
+  
+
+
+
+
+
+
+
+
+    <div id="contact" class="container-fluid mt-4 p-5 bg-dark text-white">
+      <h3 class="text-center" id="ContactTitle">Contact</h3>
+      <p class="text-center"><em>Feel free to contact!</em></p>
+    
+      <!-- Form integration with Web3Forms -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="3dd7fa75-d895-488c-a69d-aae182604436">
+    
+        <div class="row">
+          <div class="col-md-4">
+            <p>Questions? Drop a note.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Drammen, Norway</p>
+            <p><span class="glyphicon glyphicon-phone"></span> Phone: +47 90676628</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> Email: alexanderandera42@gmail.com</p>
+          </div>
+    
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5" required></textarea>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn btn-light pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Redirect after form submission -->
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      </form>
+    </div>
+    
+    <style>
+      #ContactTitle {
+        letter-spacing: 10px;
+        font-size: 20px;
+        color: white;
+      }
+    
+      .col-sm-6 {
+        margin-top: 5px;
+      }
+    
+      .form-control {
+        margin-top: 15px;
+      }
+    
+      .btn {
+        background-color: rgb(255, 255, 255);
+      }
+    
+      .btn:hover {
+        background-color: rgba(125, 76, 76, 0.8);
+      }
+    </style>
+    
+    
+</body>
+<script>
+    // Get the button and the collapse element
+    const collapseElement = document.getElementById('demo');
+    const toggleIcon = document.getElementById('toggle-icon');
+
+    // Add event listener to toggle the arrow icon based on collapse state
+    collapseElement.addEventListener('show.bs.collapse', function () {
+        toggleIcon.classList.remove('bi-caret-down-fill');
+        toggleIcon.classList.add('bi-caret-up-fill');
+    });
+
+    collapseElement.addEventListener('hide.bs.collapse', function () {
+        toggleIcon.classList.remove('bi-caret-up-fill');
+        toggleIcon.classList.add('bi-caret-down-fill');
+    });
+</script>
+</html>
