@@ -1,1 +1,1 @@
-Just a silly project to show off my cat. Played around with some Bootstrap.
+Just a silly project to show off my cat. Played around with some Bootstrap Framework.
